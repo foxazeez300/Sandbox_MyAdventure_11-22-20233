@@ -15,10 +15,7 @@ void setup() {
   appHeight = height;
   //
   DisplayAlgorithm();
-  //
-  //text setup
-  SplashFont = createFont("TimesNewRomanPSMT", 55);
-  //
+  textSetup(); //See Text
   //population
   float centerX=appWidth*1/2, centerY=appHeight*1/2;
   //
