@@ -1,5 +1,9 @@
 //Gloabal Variables 
+int size;
+color purple=#4B1B4B;
+color resetDefaultInk=#FFFFFF;
 //
+String spaceBar = "Press the Space Bar to Continue";
 void textSetup() {
   //Fonts from OS (Operating System)
   // String[] fontList = PFont.list(); //To list all fonts available on OS
@@ -9,17 +13,19 @@ void textSetup() {
  //
 } //End text setup
 //
-void splashScreenText() {
-color purple=#4B1B4B;
-   fill(purple); //Ink, hexidecimal copied from Color Selector
+void precodeText() {
+fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+} //end pre code text
+//
+void splashScreenText() {
+  precodeText();
+  size = 18;
   int size = 18; //Change the number until it fits
   textFont(SplashFont, size); 
-  String spaceBar = "Press the SPACE BAR to continue";
   text( spaceBar, ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight );
   //noFill();
-  color resetDefaultInk=#FFFFFF;
   fill(resetDefaultInk);
 } //End Slash screen Text
 //
