@@ -8,6 +8,8 @@ int appWidth, appHeight, smallerDimension;
 Boolean OS_ON=false, programStart=false;
 PFont SplashFont;
 float ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight;
+color resetColour=#FFFFFF, white=#FFFFFF;
+float backgroundX, backgroundY, backgroundWidth, backgroundHeight:
 //
 void setup() {
  size(1000, 800);
@@ -17,13 +19,7 @@ void setup() {
   //
   DisplayAlgorithm();
   textSetup(); //See Text
-  //population
-  float centerX=appWidth*1/2, centerY=appHeight*1/2;
-  //
-  ssSpaceBarWidth = appWidth*1/2;
-  ssSpaceBarHeight = appHeight*1/10;
-  ssSpaceBarX = centerX - ssSpaceBarWidth*1/2;
-  ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
+  population(); //See population
   //
   //DIVs
   //rect(ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight);
@@ -40,7 +36,10 @@ void mousePressed() {
 } //end mousePressed
 //
 void keyPressed() {
-
+  if (key== ' ') programStart = true;
+  //
+  //keyboard short cuts
+  //if(key==CODED )
 } //end keyPressed
 //
 //End MAIN program
