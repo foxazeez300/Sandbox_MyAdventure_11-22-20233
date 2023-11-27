@@ -2,7 +2,7 @@
 // 
 void homeScreen() {
   println("Arrived a the Home Screen");
-  backgroundImage(); //see Images
+  backgroundRect(); //see Images
 } //End Home Screen
 //
 //End Home Screen Main
