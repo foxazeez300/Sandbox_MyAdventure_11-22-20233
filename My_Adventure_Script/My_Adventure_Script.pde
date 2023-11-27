@@ -9,7 +9,7 @@ Boolean OS_ON=false, programStart=false;
 PFont SplashFont;
 float ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight;
 color resetColour=#FFFFFF, white=#FFFFFF;
-float backgroundX, backgroundY, backgroundWidth, backgroundHeight:
+float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 //
 void setup() {
  size(1000, 800);
@@ -20,6 +20,7 @@ void setup() {
   DisplayAlgorithm();
   textSetup(); //See Text
   population(); //See population
+  load
   //
   //DIVs
   //rect(ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight);
