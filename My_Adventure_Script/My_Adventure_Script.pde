@@ -1,10 +1,11 @@
 /* to do list for my "Adventure"
+-find some Images for the program
 -
 */
 //
 //Global Varibles
 int appWidth, appHeight, smallerDimension;
-Boolean OS_ON=false;
+Boolean OS_ON=false, programStart=false;
 PFont SplashFont;
 float ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight;
 //
@@ -30,7 +31,8 @@ void setup() {
 } //end setup
 //
 void draw() {
-  if (OS_ON == true) SplashScreen();
+  if (OS_ON == true && programStart == false) SplashScreen();
+  if (OS_ON == true && programStart == true ) homeScreen();
 } //end draw
 //
 void mousePressed() {
