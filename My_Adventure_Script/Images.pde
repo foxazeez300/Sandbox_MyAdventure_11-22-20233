@@ -18,8 +18,8 @@ void backgroundImage() {
 void loadImagesSetup() {
   //Review of Strings for Pathways and Files
   String pathway = "../Images/";
-  String MyImage = "../Images/thick-chocolate-chip-cookies-recipe-14-scaled.jpg";
-  backgroundImage=loadImage("../Images/thick-chocolate-chip-cookies-recipe-14-scaled.jpg");
+  String MyImage = "../Images/istockphoto-155439315-612x612.jpg";
+  backgroundImage=loadImage("../Images/istockphoto-155439315-612x612.jpg");
   
 } //End Load Image
 //
