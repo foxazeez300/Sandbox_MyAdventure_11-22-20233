@@ -24,8 +24,7 @@ void setup() {
   //
   //DIVs
   //rect(ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight);
-  //
-} //end setup
+  } //end setup
 //
 void draw() {
   if (OS_ON == true && programStart == false) SplashScreen();
@@ -34,13 +33,15 @@ void draw() {
 //
 void mousePressed() {
   if ( OS_ON == false ) OS_ON = true;
-} //end mousePressed
+} //end mousePressed 
 //
 void keyPressed() {
-  if (key== ' ') programStart = true;
-  //
-  //keyboard short cuts
-  //if(key==CODED )
+   if ( key==' ' ) programStart = true;
+ //
+  //Key Board Short Cuts
+  if ( key==CODED || keyCode==ESC ) exit();
+  if ( key=='Q' || key=='q' ) exit();
+ //
 } //end keyPressed
 //
 //End MAIN program
