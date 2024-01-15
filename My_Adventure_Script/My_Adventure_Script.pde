@@ -1,8 +1,3 @@
-/* to do list for my "Adventure"
--find some Images for the program
--
-*/
-//
 //Global Varibles
 int appWidth, appHeight, smallerDimension;
 Boolean OS_ON=false, programStart=false;
@@ -20,7 +15,7 @@ void setup() {
   DisplayAlgorithm();
   textSetup(); //See Text
   population(); //See population
-  load
+  loadImagesSetup();
   //
   //DIVs
   //rect(ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight);
